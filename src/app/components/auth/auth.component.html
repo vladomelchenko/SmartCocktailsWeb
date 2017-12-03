@@ -1,0 +1,12 @@
+<div class="form">
+    <div class="thumbnail"><img src="https://icon-icons.com/icons2/1185/PNG/512/1490134637-cocktails_82237.png"/></div>
+    <form class="login-form" method="post">
+        <input type="text" class="form-control" [(ngModel)] = "logModel.email" name="Email" placeholder="email"/> 
+        <input type="text" class="form-control" [(ngModel)] = "logModel.password" name="Password" placeholder="password" /> 
+       <div class="form-group">
+            <button class="btn btn-default" (click)="submit(logModel)">Отправить</button>
+        </div>
+        <p class="message">Not register? <a href="/register">Register</a></p>
+    </form>
+
+</div>

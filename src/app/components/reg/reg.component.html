@@ -1,0 +1,13 @@
+<div class="form">
+    <div class="thumbnail"><img src="https://icon-icons.com/icons2/1185/PNG/512/1490134637-cocktails_82237.png"/></div>
+    <form class="register-form" method="post">
+        <input type="text" class="form-control" [(ngModel)] = "regModel.email" name="Email" placeholder="email"/> 
+        <input type="text" class="form-control" [(ngModel)] = "regModel.password" name="Password" placeholder="password" /> 
+        <input type="text" class="form-control" [(ngModel)] = "regModel.confirmPassword" name="ConfirmPassword" placeholder="confirm password"/>
+        <div class="form-group">
+            <button class="btn btn-default" (click)="submit(regModel)">Отправить</button>
+        </div>
+        <p class="message">Already registered? <a href="/login">Sign In</a></p>
+    </form>
+
+</div>
